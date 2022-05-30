@@ -10,10 +10,10 @@ body {
   display: block;
   text-align: right;
 }
-.header--img {
+.header__img {
   width: 100%;
 }
-.header--link {
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -35,7 +35,7 @@ body {
   display: inline-block;
   flex-grow: 1;
 }
-.goals--list {
+.goals__list {
   margin: 0;
   padding: 0px;
 }
@@ -43,12 +43,12 @@ body {
   display: flex;
   list-style: none;
 }
-.goal--cb,
-.goal--text,
-.goal--btn {
+.goal__cb,
+.goal__text,
+.goal__btn {
   outline: none;
 }
-.goal--btn {
+.goal__btn {
   background: none;
   border: 0px;
   color: #888;
@@ -57,11 +57,11 @@ body {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-.goal--btn:hover {
+.goal__btn:hover {
   color: #3a3a3a;
 }
 /* Heading */
-.goals--title {
+.goals__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -70,7 +70,7 @@ body {
   margin: 0;
   text-transform: uppercase;
 }
-.goal--text {
+.goal__text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -82,12 +82,12 @@ body {
   font-family: Lato, sans-serif;
   color: #888;
 }
-.goal--text:focus {
+.goal__text:focus {
   color: #333;
 }
 
 /* New Task */
-.goal--text#new-task {
+.goal__text#new-goal {
   width: 84%;
   display: flex;
 }
@@ -106,43 +106,43 @@ body {
   vertical-align: middle;
 }
 
-.goal .goal--cb {
+.goal .goal__cb {
   margin: 0 10px;
 }
-.goal .goal--name {
+.goal .goal__name {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.goal .goal--text {
+.goal .goal__text {
   width: 226px;
 }
-.goal--btn-img {
+.goal__btn-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.goal--btn-img:hover {
+.goal__btn-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.goals--list#completed-tasks .goal--name {
+.goals__list#completed-tasks .goal__name {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.goal--text {
+.goal__text {
   display: none;
 }
 
-.goal.edit-mode .goal--text {
+.goal.edit-mode .goal__text {
   display: inline-block;
   width: 224px;
 }
 
-.goal.edit-mode .goal--name {
+.goal.edit-mode .goal__name {
   display: none;
 }
